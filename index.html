@@ -1,0 +1,334 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sphinx Doc – MATLAB Example 1 &mdash; Sphinx Doc - MATLAB #1  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> Sphinx Doc - MATLAB #1
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Sphinx Doc – MATLAB Example 1</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Sphinx Doc - MATLAB #1</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Sphinx Doc – MATLAB Example 1</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sphinx-doc-matlab-example-1">
+<h1>Sphinx Doc – MATLAB Example 1<a class="headerlink" href="#sphinx-doc-matlab-example-1" title="Permalink to this headline">¶</a></h1>
+<p>Examples of auto-documenting <a class="reference external" href="https://mathworks.com">MATLAB</a> source files with <a class="reference external" href="https://www.sphinx-doc.org">Sphinx</a>, which lets you
+create beautiful documentation. The source for this project is found at
+<a class="reference external" href="https://github.com/joeced/sphinx-docs-matlab-example-1">https://github.com/joeced/sphinx-docs-matlab-example-1</a>.</p>
+<div class="toctree-wrapper compound">
+</div>
+<p>The file structure for this project is, where source files are located in the
+<code class="docutils literal notranslate"><span class="pre">src</span></code> folder.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docs</span>
+    <span class="n">conf</span><span class="o">.</span><span class="n">py</span>
+    <span class="n">index</span><span class="o">.</span><span class="n">rst</span>
+<span class="n">src</span>
+    <span class="nd">@ClassFolder</span>
+        <span class="n">a_static_func</span><span class="o">.</span><span class="n">m</span>
+        <span class="n">ClassFolder</span><span class="o">.</span><span class="n">m</span>
+        <span class="n">classMethod</span><span class="o">.</span><span class="n">m</span>
+    <span class="o">+</span><span class="n">package</span>
+       <span class="n">func</span><span class="o">.</span><span class="n">m</span>
+    <span class="n">submodule</span>
+       <span class="n">ClassInheritDifferentModules</span><span class="o">.</span><span class="n">m</span>
+       <span class="n">TestFibonacci</span><span class="o">.</span><span class="n">m</span>
+    <span class="n">ClassBySource</span><span class="o">.</span><span class="n">m</span>
+    <span class="n">f_example</span><span class="o">.</span><span class="n">m</span>
+</pre></div>
+</div>
+<p>In <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>, we have setup the use of <cite>sphinxcontrib-matlabdomain</cite> with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">matlab_src_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
+<span class="n">primary_domain</span> <span class="o">=</span> <span class="s1">&#39;mat&#39;</span>
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinx.ext.autodoc&#39;</span><span class="p">,</span> <span class="s1">&#39;sphinxcontrib.matlab&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<span class="target" id="module-src"></span><dl class="class">
+<dt id="src.ClassBySource">
+<em class="property">class </em><code class="sig-prename descclassname">src.</code><code class="sig-name descname">ClassBySource</code><a class="headerlink" href="#src.ClassBySource" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class which should be printed by source</p>
+<dl class="method">
+<dt id="src.ClassBySource.testA">
+<code class="sig-name descname">testA</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#src.ClassBySource.testA" title="Permalink to this definition">¶</a></dt>
+<dd><p>testA function</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="src.ClassBySource.testB">
+<code class="sig-name descname">testB</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#src.ClassBySource.testB" title="Permalink to this definition">¶</a></dt>
+<dd><p>testB function</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="src.ClassBySource.testC">
+<code class="sig-name descname">testC</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#src.ClassBySource.testC" title="Permalink to this definition">¶</a></dt>
+<dd><p>testC function</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="src.&#64;ClassFolder">
+<em class="property">class </em><code class="sig-prename descclassname">src.</code><code class="sig-name descname">&#64;ClassFolder</code><a class="headerlink" href="#src.@ClassFolder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="src.&#64;ClassFolder.classMethod">
+<code class="sig-prename descclassname">src.&#64;ClassFolder.</code><code class="sig-name descname">classMethod</code><span class="sig-paren">(</span><em class="sig-param">obj</em>, <em class="sig-param">varargin</em><span class="sig-paren">)</span><a class="headerlink" href="#src.@ClassFolder.classMethod" title="Permalink to this definition">¶</a></dt>
+<dd><p>CLASSMETHOD A function within a package</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>obj</strong> – An instance of this class.</p></li>
+<li><p><strong>varargin</strong> – Variable input arguments.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>varargout</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="src.&#64;ClassFolder.a_static_func">
+<code class="sig-prename descclassname">src.&#64;ClassFolder.</code><code class="sig-name descname">a_static_func</code><span class="sig-paren">(</span><em class="sig-param">args</em><span class="sig-paren">)</span><a class="headerlink" href="#src.@ClassFolder.a_static_func" title="Permalink to this definition">¶</a></dt>
+<dd><p>method in <a class="reference internal" href="#src.&#64;ClassFolder" title="src.&#64;ClassFolder"><code class="xref mat mat-class docutils literal notranslate"><span class="pre">&#64;ClassFolder</span></code></a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="src.f_example">
+<code class="sig-prename descclassname">src.</code><code class="sig-name descname">f_example</code><span class="sig-paren">(</span><em class="sig-param">a1</em>, <em class="sig-param">a2</em><span class="sig-paren">)</span><a class="headerlink" href="#src.f_example" title="Permalink to this definition">¶</a></dt>
+<dd><p>a fun function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a1</strong> – the first input</p></li>
+<li><p><strong>a2</strong> – another input</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">[o1,</span> <span class="pre">o2,</span> <span class="pre">o3]</span></code> some outputs</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="src.+package.package_func">
+<code class="sig-prename descclassname">src.+package.</code><code class="sig-name descname">package_func</code><span class="sig-paren">(</span><em class="sig-param">varargin</em><span class="sig-paren">)</span><a class="headerlink" href="#src.+package.package_func" title="Permalink to this definition">¶</a></dt>
+<dd><p>F_EXAMPLE A function within a package</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>varargin</strong> – Variable input arguments.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>varargout</p>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-src.submodule"></span><dl class="class">
+<dt id="src.submodule.ClassInheritDifferentModules">
+<em class="property">class </em><code class="sig-prename descclassname">src.submodule.</code><code class="sig-name descname">ClassInheritDifferentModules</code><a class="headerlink" href="#src.submodule.ClassInheritDifferentModules" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref mat mat-class docutils literal notranslate"><span class="pre">MyAbstractClass</span></code>, <code class="xref mat mat-class docutils literal notranslate"><span class="pre">MyHandleClass</span></code></p>
+<p>class which inherits bases from a different module</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="src.submodule.TestFibonacci">
+<em class="property">class </em><code class="sig-prename descclassname">src.submodule.</code><code class="sig-name descname">TestFibonacci</code><a class="headerlink" href="#src.submodule.TestFibonacci" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref mat mat-class docutils literal notranslate"><span class="pre">matlab.unittest.TestCase</span></code></p>
+<p>Test of MATLAB unittest method attributes</p>
+<dl class="method">
+<dt id="src.submodule.TestFibonacci.compareFirstThreeElementsToExpected">
+<code class="sig-name descname">compareFirstThreeElementsToExpected</code><span class="sig-paren">(</span><em class="sig-param">tc</em><span class="sig-paren">)</span><a class="headerlink" href="#src.submodule.TestFibonacci.compareFirstThreeElementsToExpected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case that compares first three elements</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Jørgen Cederberg
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
