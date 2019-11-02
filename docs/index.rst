@@ -36,6 +36,9 @@ In ``conf.py``, we have setup the use of `sphinxcontrib-matlabdomain` with::
    extensions = ['sphinx.ext.autodoc', 'sphinxcontrib.matlab']
 
 
+Examples
+--------
+
 .. automodule:: src
 
 .. autoclass:: ClassBySource
